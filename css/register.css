@@ -1,0 +1,108 @@
+.left-register {
+  width: 50%;
+}
+
+.register {
+  background: rgb(52, 132, 207);
+  padding: 20px;
+  border-radius: 10px;
+  width: min(400px, 90%);
+}
+
+.register input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-top: 15px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(230, 230, 230);
+  color: rgb(56, 56, 56);
+}
+
+.register span {
+  font-size: 0.8rem;
+}
+
+.right-register {
+  width: 50%;
+}
+
+.login-register {
+  background: rgb(52, 132, 207);
+  height: 100vh;
+}
+
+.img-register {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: darkblue;
+  padding: 80px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.modal-error {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 0, 0);
+  padding: 80px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .register-container {
+    flex-direction: column-reverse !important;
+    justify-content: flex-end;
+  }
+
+  .right-register {
+    width: 100%;
+  }
+
+  .login-register {
+    height: 30vh;
+  }
+
+  .img-register {
+    margin-top: 20px;
+    height: 100%;
+  }
+
+  .modal {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .modal-error {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+  }
+}

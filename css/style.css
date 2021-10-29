@@ -1,0 +1,155 @@
+@import url(./register.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+body {
+  background: rgb(230, 230, 230);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  background: rgb(52, 132, 207);
+  width: 50%;
+}
+
+.text-content-left {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 80px;
+}
+
+.img-content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-content-left img {
+  width: 80%;
+}
+
+.content-right,
+.left-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.content-login {
+  background: rgb(52, 132, 207);
+  padding: 20px;
+  border-radius: 10px;
+  width: min(400px, 90%);
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.content-login input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-top: 15px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(230, 230, 230);
+  color: rgb(56, 56, 56);
+}
+
+.content-login span {
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: white;
+  border: none;
+  color: rgb(52, 132, 207);
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: rgb(172, 225, 255);
+  transition: 0.1s;
+}
+
+.register-index {
+  text-align: center;
+}
+
+.text-autentication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 5rem;
+  color: chartreuse;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content-left {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .text-content-left {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+
+  .img-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-content-left img {
+    height: 50%;
+  }
+
+  .content-right,
+  .left-register {
+    margin-top: 75px;
+    width: 100%;
+    bottom: 10px;
+  }
+
+  .content-login {
+    padding: 20px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container register-container">
+      <div class="left-register">
+        <div class="register">
+          <form action="">
+            <label for="user"> Crie um usuário </label>
+            <br />
+            <input type="text" id="createUser" placeholder="Usuário..." required />
+            <br /><br />
+            <label for="password"> Digite sua senha </label>
+            <br />
+            <input
+              type="password"
+              placeholder="Sua senha..."
+              maxlength="8"
+              id="newPassword" required
+            />
+            <br />
+            <span>máximo 8 dígitos</span>
+            <br />
+            <br />
+            <div class="button">
+              <button type="submit" id="btnRegister" onclick="registerUser()">Cadastrar</button>
+            </div>
+          </form>
+          <br />
+
+          <div class="cadastrar">
+            <a href="index.html">Fazer Login</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-register">
+        <div class="login-register">
+          <div class="text-content-left">Cadastro de Usuário</div>
+          <div class="img-register">
+            <img src="assets/svg_cadastro_login.svg" alt="login" />
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="modal-container hidden" id="modal-container">
+        <div class="modal">
+            Registro Efetuado com sucesso <br>
+            <small> Redirecionando para login em 2 segundos...</small>
+            <div class="button">
+                <button onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="JS/scripts.js"></script>
+  </body>
+</html>

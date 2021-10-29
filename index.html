@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-left">
+        <div class="text-content-left">
+          Bem-vindo <br />
+          Login
+        </div>
+        <div class="img-content-left">
+          <img src="assets/svg_login.svg" alt="image-login" />
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="content-login">
+          <form action="">
+            <label for="user"> Digite seu usuário </label>
+            <br />
+            <input type="text" id="userName" placeholder="Usuário..." />
+            <br /><br />
+            <label for="password"> Digite sua senha </label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              placeholder="Sua senha..."
+              maxlength="8"
+            />
+            <br />
+            <span>máximo 8 dígitos</span>
+            <br />
+            <br />
+            <div class="button">
+              <button type="submit" id="btnLogin" onclick="loginUser()">
+                Fazer Login
+              </button>
+            </div>
+          </form>
+          <br />
+          <div class="register-index">
+            <a href="register.html"> Faça seu cadastro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container hidden" id="modal-container">
+      <div class="modal">
+        Login efetuado com sucesso <br />
+        <small> Redirecionando em 2 segundos...</small>
+        <div class="button">
+          <button onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/scripts.js"></script>
+  </body>
+</html>
